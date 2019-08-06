@@ -1,66 +1,89 @@
-.head {
-    height: 70px;
-    width: 100%;
-    background-color: #fff;
-    font-size: 16px;
-    /* bottom陰影 */
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 10px;
-    margin: 0 auto;
-    position: relative;
+@charset "UTF-8";
+#header {
+  height: 70px;
+  width: 100%;
+  background-color: #fff;
+  font-size: 16px;
+  /* bottom陰影 */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 10px;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media (max-width: 575.98px) {
+  .head {
     text-align: center;
+  }
 }
-
-.head .wrap {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    align-items: center;
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .head {
+    width: 576px;
+  }
 }
-
-.head .wrap img {
-    width: 50%;
-    vertical-align: middle;
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .head {
+    width: 768px;
+  }
 }
-
-.head .txt {
-    width: 50%;
-    vertical-align: middle;
-    padding-left: 280px;
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .head {
+    width: 992px;
+  }
 }
-
-.head .txt span {
-    margin: 0px 5px;
+@media (min-width: 1200px) {
+  .head {
+    width: 1200px;
+  }
 }
-
+.head div {
+  display: inline;
+}
+.head .logoDiv {
+  padding-left: 30px;
+}
+.head .logoDiv #menu {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+}
+@media (max-width: 575.98px) {
+  .head .logoDiv #menu {
+    display: inline !important;
+  }
+}
+.head .userDiv {
+  position: absolute;
+  right: 5%;
+  top: 20%;
+  text-align: center;
+}
 .head .useService {
-    color: #999A9F;
-    font-weight: bold;
+  color: #999A9F;
+  font-weight: bold;
 }
-
+@media (max-width: 575.98px) {
+  .head .useService {
+    display: none;
+  }
+}
 .head #logoIcon {
-    /* position: fixed;
-  left: 361px;
-  top: 6px; */
-    width: 151px;
-    height: 58px;
-    vertical-align: middle;
+  width: 151px;
+  height: 58px;
+  vertical-align: middle;
 }
-
 .head #userIcon {
-    width: 25px;
-    height: 27px;
-    vertical-align: middle;
-    margin-top: 3px;
+  width: 25px;
+  height: 27px;
+  vertical-align: middle;
+  margin-top: 3px;
 }
-
 .head .userIconCircle {
-    height: 35px;
-    width: 35px;
-    display: inline-block;
-    border: 2px solid lightgray;
-    border-radius: 50%;
-    vertical-align: middle;
+  height: 35px;
+  width: 35px;
+  display: inline-block;
+  border: 2px solid lightgray;
+  border-radius: 50%;
+  vertical-align: middle;
 }
-
 
 /*# sourceMappingURL=head.css.map */

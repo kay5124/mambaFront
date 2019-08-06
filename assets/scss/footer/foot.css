@@ -7,24 +7,36 @@ footer {
   bottom: 0;
   text-align: center;
 }
+@media only screen and (max-width: 768px) {
+  footer {
+    height: 375px;
+  }
+}
 
 .footer .company {
   padding: 25px;
   font-size: 14px;
   font-weight: bold;
+  word-wrap: break-word;
 }
 .footer .service a {
   padding-left: 10px;
   padding-right: 10px;
 }
 .footer .contact {
+  position: fixed;
+  left: 25%;
   padding-top: 20px;
-  margin: 0 auto;
-  text-align: left;
-  height: 100%;
-  width: 40%;
+  margin: 0px auto;
+  text-align: justify;
   line-height: 3px;
   font-size: 14px;
+  vertical-align: middle;
+}
+@media only screen and (max-width: 768px) {
+  .footer .contact {
+    left: 10%;
+  }
 }
 
 /*# sourceMappingURL=foot.css.map */
