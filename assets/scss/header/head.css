@@ -1,0 +1,66 @@
+.head {
+    height: 70px;
+    width: 100%;
+    background-color: #fff;
+    font-size: 16px;
+    /* bottom陰影 */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 10px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+.head .wrap {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.head .wrap img {
+    width: 50%;
+    vertical-align: middle;
+}
+
+.head .txt {
+    width: 50%;
+    vertical-align: middle;
+    padding-left: 280px;
+}
+
+.head .txt span {
+    margin: 0px 5px;
+}
+
+.head .useService {
+    color: #999A9F;
+    font-weight: bold;
+}
+
+.head #logoIcon {
+    /* position: fixed;
+  left: 361px;
+  top: 6px; */
+    width: 151px;
+    height: 58px;
+    vertical-align: middle;
+}
+
+.head #userIcon {
+    width: 25px;
+    height: 27px;
+    vertical-align: middle;
+    margin-top: 3px;
+}
+
+.head .userIconCircle {
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+    border: 2px solid lightgray;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+
+/*# sourceMappingURL=head.css.map */

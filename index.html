@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="apple-mobile-web-app-capable" content="no" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <meta name="format-detection" content="telephone=no" />
-        
-        <!-- head style -->
-        <link rel="stylesheet" href="/assets/css/head.css">
 
-        <!-- JQuery -->
-        <script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="apple-mobile-web-app-capable" content="no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=no" />
 
-        <script type="text/javascript" src="assets/js/index.js"></script>
+    <!-- head style -->
+    <!-- <link rel="stylesheet" href="/assets/scss/head.css"> -->
 
-        <title>MAMBA</title>
+    <!-- JQuery -->
+    <script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
 
-        <style>
-            html,body{
-                margin: 0;
-            }
-        </style>
-    </head>
-    <body>
-        <header id="header"></header>
-        <main id="mainContent"></main>
-        <footer id="footer"></footer>
-    </body>
+    <script type="text/javascript" src="assets/js/index.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function(){
-            InitHead();
-        });
-    </script>
+    <title>MAMBA</title>
+
+    <style>
+        html,
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header"></header>
+    <main id="mainContent"></main>
+    <footer id="footer"></footer>
+</body>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        InitHead();
+        InitFoot();
+    });
+</script>
+
 </html>
