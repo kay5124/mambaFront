@@ -38,24 +38,41 @@
 .head div {
   display: inline;
 }
-.head .logoDiv {
-  padding-left: 30px;
-}
-.head .logoDiv #menu {
+.head #menu {
   position: absolute;
-  top: 20%;
+  top: 30%;
   left: 5%;
 }
 @media (max-width: 575.98px) {
-  .head .logoDiv #menu {
+  .head #menu {
     display: inline !important;
+  }
+}
+.head .logoDiv {
+  top: 10%;
+  position: absolute;
+  left: 18%;
+}
+@media (max-width: 575.98px) {
+  .head .logoDiv {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .head .userDiv {
   position: absolute;
-  right: 5%;
-  top: 20%;
+  right: 20%;
+  top: 25%;
   text-align: center;
+}
+.head .userDiv * {
+  margin: 0 5px;
+}
+@media (max-width: 575.98px) {
+  .head .userDiv {
+    right: 5%;
+  }
 }
 .head .useService {
   color: #999A9F;

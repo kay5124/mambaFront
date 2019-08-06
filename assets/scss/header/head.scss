@@ -37,22 +37,35 @@
     div {
         display: inline;
     }
+    #menu {
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        @media (max-width: 575.98px) {
+            display: inline !important;
+        }
+    }
     .logoDiv {
-        padding-left: 30px;
-        #menu {
-            position: absolute;
-            top: 20%;
-            left: 5%;
-            @media (max-width: 575.98px) {
-                display: inline !important;
-            }
+        top: 10%;
+        position: absolute;
+        left : 18%;
+        @media (max-width: 575.98px) {
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
     .userDiv {
+        *{
+            margin: 0 5px;
+        }
         position: absolute;
-        right: 5%;
-        top: 20%;
+        right: 20%;
+        top: 25%;
         text-align: center;
+        @media (max-width: 575.98px) {
+            right: 5%;
+        }
     }
     .useService {
         color: #999A9F;

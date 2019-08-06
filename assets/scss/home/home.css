@@ -1,0 +1,13 @@
+#mainContent .banner {
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+#mainContent .storeGame {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+/*# sourceMappingURL=home.css.map */

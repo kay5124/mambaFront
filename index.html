@@ -14,12 +14,19 @@
 
     <!-- JQuery -->
     <script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
-
     <script type="text/javascript" src="assets/js/index.js"></script>
+
+    <!-- 輪播套件 -->
+    <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
 
     <title>MAMBA</title>
 
     <style>
+        *{
+            font-family: Microsoft JhengHei;
+        }
         html,
         body {
             margin: 0;
@@ -37,7 +44,9 @@
 <script type="text/javascript">
     $(document).ready(function() {
         InitHead();
+        InitMainPage();
         InitFoot();
+        
     });
 </script>
 
