@@ -1,22 +1,41 @@
 #mainContent {
-    .banner {
+    .bg {
         width: 100%;
-        height: 300px;
-        text-align: center;
         background-color: rgba(242, 242, 242, 1);
+        .banner {
+            width: 1200px;
+            height: 300px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgba(242, 242, 242, 1);
+        }
     }
     .storeGame {
         width: 100%;
         height: 100%;
+        margin-left: auto;
+        margin-right: auto;
         text-align: center;
         .title {
             padding-top: 50px;
             padding-bottom: 50px;
         }
         .gameList {
-            width: 57%;
+            width: 60%;
             margin-left: auto;
             margin-right: auto;
+            @media (max-width: 1550px) {
+                width: 70%;
+            }
+            @media (max-width: 1300px) {
+                width: 80%;
+            }
+            article {
+                display: inline-block;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
         }
         .gameDiv {
             width: 287px;
@@ -42,7 +61,7 @@
             .serviceBtn {
                 .btn {
                     display: inline-block;
-                    width: 118px;
+                    width: 48%;
                     height: 38px;
                     border-radius: 50px;
                     border: 1px black solid;

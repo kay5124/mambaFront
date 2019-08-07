@@ -1,12 +1,20 @@
-#mainContent .banner {
+#mainContent .bg {
   width: 100%;
+  background-color: #f2f2f2;
+}
+#mainContent .bg .banner {
+  width: 1200px;
   height: 300px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #f2f2f2;
 }
 #mainContent .storeGame {
   width: 100%;
   height: 100%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 #mainContent .storeGame .title {
@@ -14,9 +22,24 @@
   padding-bottom: 50px;
 }
 #mainContent .storeGame .gameList {
-  width: 57%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
+}
+@media (max-width: 1550px) {
+  #mainContent .storeGame .gameList {
+    width: 70%;
+  }
+}
+@media (max-width: 1300px) {
+  #mainContent .storeGame .gameList {
+    width: 80%;
+  }
+}
+#mainContent .storeGame .gameList article {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 #mainContent .storeGame .gameDiv {
   width: 287px;
@@ -41,7 +64,7 @@
 }
 #mainContent .storeGame .gameDiv .serviceBtn .btn {
   display: inline-block;
-  width: 118px;
+  width: 48%;
   height: 38px;
   border-radius: 50px;
   border: 1px black solid;
