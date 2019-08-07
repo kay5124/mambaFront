@@ -1,0 +1,41 @@
+@charset "UTF-8";
+.main {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  /* 手機直 */
+  /* 手機橫 */
+  /* 平板 */
+  /* 平板橫 */
+  /* 桌機 小於1200 */
+  /* 桌機 大於 1200 */
+  /* 桌機 大於 1240 */
+}
+@media (max-width: 767px) {
+  .main {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .main {
+    width: 768px;
+  }
+}
+@media (min-width: 980px) {
+  .main {
+    width: 980px;
+  }
+}
+@media (min-width: 1200px) {
+  .main {
+    width: 1200px;
+  }
+}
+@media (min-width: 1240px) {
+  .main {
+    width: 1200px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

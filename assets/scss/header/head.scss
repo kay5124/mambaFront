@@ -2,9 +2,8 @@
     @return ($px / basic-font-size) * 1rem;
 }
 
-#header {
+.headbg {
     height: 70px;
-    width: 100%;
     background-color: #fff;
     font-size: 16px;
     /* bottom陰影 */
@@ -14,6 +13,9 @@
 }
 
 .head {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
     // Extra small devices (portrait phones, less than 576px)
     // @media (max-width: 575.98px) {
     //     text-align: center;
@@ -75,11 +77,13 @@
         @media (max-width: 968px) {
             display: none;
         }
+        cursor: pointer;
     }
     #logoIcon {
         width: 151px;
         height: 58px;
         vertical-align: middle;
+        cursor: pointer;
     }
     #userIcon {
         width: 25px;
@@ -94,5 +98,6 @@
         border: 2px solid lightgray;
         border-radius: 50%;
         vertical-align: middle;
+        cursor: pointer;
     }
 }

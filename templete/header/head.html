@@ -1,16 +1,18 @@
-<div class="head">
-    <img id="menu" width="32px" height="32px" style="display: none;" src="../../assets/images/menuBtn.png" />
-    <div class="logoDiv">
-        <img id="logoIcon" src="../../assets/images/logo.png" />
-        <a class="useService" style="margin-left: 50px;">儲值中心</a>
-        <a class="useService" style="margin-left: 50px;">客服中心</a>
-    </div>
-    <div class="userDiv">
-        <div class="userIconCircle">
-            <img id="userIcon" src="../../assets/images/userDefault.png" />
+<div class="headbg">
+    <div class="head">
+        <img id="menu" width="32px" height="32px" style="display: none;" src="../../assets/images/menuBtn.png" />
+        <div class="logoDiv">
+            <img id="logoIcon" onclick="directUrl('/')" src="../../assets/images/logo.png" />
+            <a class="useService" style="margin-left: 50px;">儲值中心</a>
+            <a class="useService" style="margin-left: 50px;">客服中心</a>
         </div>
-        <span class="useService">登入</span>
-        <span class="useService">|</span>
-        <span class="useService">註冊</span>
+        <div class="userDiv">
+            <div class="userIconCircle">
+                <img id="userIcon" src="../../assets/images/userDefault.png" />
+            </div>
+            <span class="useService" onclick="directUrl('login')">登入</span>
+            <span class="useService">|</span>
+            <span class="useService" onclick="directUrl('register')">註冊</span>
+        </div>
     </div>
 </div>

@@ -1,47 +1,24 @@
-#mainContent .bg {
-  width: 100%;
-  background-color: #f2f2f2;
-}
-#mainContent .bg .banner {
-  width: 1200px;
-  height: 300px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #f2f2f2;
-}
-#mainContent .storeGame {
+.main .storeGame {
   width: 100%;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
 }
-#mainContent .storeGame .title {
+.main .storeGame .title {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-#mainContent .storeGame .gameList {
-  width: 60%;
+.main .storeGame .gameList {
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
-@media (max-width: 1550px) {
-  #mainContent .storeGame .gameList {
-    width: 70%;
-  }
-}
-@media (max-width: 1300px) {
-  #mainContent .storeGame .gameList {
-    width: 80%;
-  }
-}
-#mainContent .storeGame .gameList article {
+.main .storeGame .gameList article {
   display: inline-block;
   margin-left: 10px;
   margin-right: 10px;
 }
-#mainContent .storeGame .gameDiv {
+.main .storeGame .gameDiv {
   width: 287px;
   height: 397px;
   margin-left: auto;
@@ -51,84 +28,64 @@
   margin-bottom: 50px;
   padding: 15px;
 }
-#mainContent .storeGame .gameDiv .gameImgArea {
+.main .storeGame .gameDiv .gameImg {
+  position: relative;
+  top: calc((100% - 70px) / 2);
+}
+.main .storeGame .gameDiv .gameImgArea {
+  margin: 0 auto;
+  position: relative;
   border-radius: 10px;
   background-color: #F2F2F2;
-  text-align: center;
   height: 260px;
-  line-height: 260px;
 }
-#mainContent .storeGame .gameDiv .gameName {
+.main .storeGame .gameDiv .gameImgArea .onFix {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.main .storeGame .gameDiv .gameName {
   padding-top: 10px;
   height: 70px;
 }
-#mainContent .storeGame .gameDiv .serviceBtn .btn {
+.main .storeGame .gameDiv .serviceBtn .btn {
   display: inline-block;
   width: 48%;
   height: 38px;
   border-radius: 50px;
   border: 1px black solid;
 }
-#mainContent .storeGame .gameDiv .serviceBtn .web {
+.main .storeGame .gameDiv .serviceBtn .web {
   background-color: #fff;
   color: #333333;
 }
-#mainContent .storeGame .gameDiv .serviceBtn .web:hover {
+.main .storeGame .gameDiv .serviceBtn .web:hover {
   color: white;
   background-color: #C9C9C9;
 }
-#mainContent .storeGame .gameDiv .serviceBtn .store {
+.main .storeGame .gameDiv .serviceBtn .store {
   color: white;
   background-color: #A1A1A1;
   border: none;
 }
-#mainContent .storeGame .gameDiv .serviceBtn .store:hover {
+.main .storeGame .gameDiv .serviceBtn .store:hover {
   background-color: #BCBCBC;
 }
-#mainContent .storeGame .gameDiv .serviceBtn .store:active {
+.main .storeGame .gameDiv .serviceBtn .store:active {
   background-color: #515151;
 }
-#mainContent .storeGame .moreGame {
-  text-align: center;
+.main .storeGame .moreGame {
   margin-bottom: 50px;
 }
-#mainContent .storeGame .moreGame .btn {
+.main .storeGame .moreGame .btn {
   width: 118px;
   height: 38px;
   border-radius: 50px;
   border: 1px black solid;
 }
-#mainContent .storeGame .moreGame .btn:hover {
+.main .storeGame .moreGame .btn:hover {
   color: white;
   background-color: #C9C9C9;
-}
-#mainContent .carouselImg {
-  width: 60% !important;
-  height: 300px;
-  margin-left: auto;
-  margin-right: auto;
-}
-#mainContent .carousel-control-prev {
-  left: 17% !important;
-}
-#mainContent .carousel-control-next {
-  right: 17% !important;
-}
-#mainContent .carousel-indicators li {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  text-indent: -999px;
-  cursor: pointer;
-  background-color: #868686;
-  border-radius: 10px;
-}
-#mainContent .carousel-indicators .active {
-  width: 10px;
-  height: 10px;
-  background-color: #000000;
 }
 
 /*# sourceMappingURL=home.css.map */

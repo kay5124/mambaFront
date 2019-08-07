@@ -1,0 +1,13 @@
+.banner {
+  height: 300px;
+  background-color: #F2F2F2;
+}
+
+.loginArea {
+  background-color: white;
+}
+.loginArea h2 {
+  padding: 50px 0;
+}
+
+/*# sourceMappingURL=login.css.map */

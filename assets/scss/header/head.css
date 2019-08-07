@@ -1,7 +1,6 @@
 @charset "UTF-8";
-#header {
+.headbg {
   height: 70px;
-  width: 100%;
   background-color: #fff;
   font-size: 16px;
   /* bottom陰影 */
@@ -10,6 +9,11 @@
   position: relative;
 }
 
+.head {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 @media (max-width: 968px) {
   .head {
     text-align: center;
@@ -69,6 +73,7 @@
 .head .useService {
   color: #999A9F;
   font-weight: bold;
+  cursor: pointer;
 }
 @media (max-width: 968px) {
   .head .useService {
@@ -79,6 +84,7 @@
   width: 151px;
   height: 58px;
   vertical-align: middle;
+  cursor: pointer;
 }
 .head #userIcon {
   width: 25px;
@@ -93,6 +99,7 @@
   border: 2px solid lightgray;
   border-radius: 50%;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=head.css.map */
