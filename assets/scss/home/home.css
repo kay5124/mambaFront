@@ -9,5 +9,103 @@
   height: 100%;
   text-align: center;
 }
+#mainContent .storeGame .title {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#mainContent .storeGame .gameList {
+  width: 57%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#mainContent .storeGame .gameDiv {
+  width: 287px;
+  height: 397px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  box-shadow: #bcbcbc 0px 0px 10px;
+  margin-bottom: 50px;
+  padding: 15px;
+}
+#mainContent .storeGame .gameDiv .gameImgArea {
+  border-radius: 10px;
+  background-color: #F2F2F2;
+  text-align: center;
+  height: 260px;
+  line-height: 260px;
+}
+#mainContent .storeGame .gameDiv .gameName {
+  padding-top: 10px;
+  height: 70px;
+}
+#mainContent .storeGame .gameDiv .serviceBtn .btn {
+  display: inline-block;
+  width: 118px;
+  height: 38px;
+  border-radius: 50px;
+  border: 1px black solid;
+}
+#mainContent .storeGame .gameDiv .serviceBtn .web {
+  background-color: #fff;
+  color: #333333;
+}
+#mainContent .storeGame .gameDiv .serviceBtn .web:hover {
+  color: white;
+  background-color: #C9C9C9;
+}
+#mainContent .storeGame .gameDiv .serviceBtn .store {
+  color: white;
+  background-color: #A1A1A1;
+  border: none;
+}
+#mainContent .storeGame .gameDiv .serviceBtn .store:hover {
+  background-color: #BCBCBC;
+}
+#mainContent .storeGame .gameDiv .serviceBtn .store:active {
+  background-color: #515151;
+}
+#mainContent .storeGame .moreGame {
+  text-align: center;
+  margin-bottom: 50px;
+}
+#mainContent .storeGame .moreGame .btn {
+  width: 118px;
+  height: 38px;
+  border-radius: 50px;
+  border: 1px black solid;
+}
+#mainContent .storeGame .moreGame .btn:hover {
+  color: white;
+  background-color: #C9C9C9;
+}
+#mainContent .carouselImg {
+  width: 60% !important;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#mainContent .carousel-control-prev {
+  left: 17% !important;
+}
+#mainContent .carousel-control-next {
+  right: 17% !important;
+}
+#mainContent .carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #868686;
+  border-radius: 10px;
+}
+#mainContent .carousel-indicators .active {
+  width: 10px;
+  height: 10px;
+  background-color: #000000;
+}
 
 /*# sourceMappingURL=home.css.map */

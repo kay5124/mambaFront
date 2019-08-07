@@ -10,18 +10,9 @@
   position: relative;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 968px) {
   .head {
     text-align: center;
-  }
-}
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .head {
-    width: 576px;
-  }
-}
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .head {
     width: 768px;
   }
 }
@@ -43,7 +34,7 @@
   top: 30%;
   left: 5%;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 968px) {
   .head #menu {
     display: inline !important;
   }
@@ -53,7 +44,7 @@
   position: absolute;
   left: 18%;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 968px) {
   .head .logoDiv {
     width: 60%;
     margin-left: auto;
@@ -66,10 +57,11 @@
   top: 25%;
   text-align: center;
 }
-.head .userDiv * {
+.head .userDiv div,
+.head .userDiv span {
   margin: 0 5px;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 968px) {
   .head .userDiv {
     right: 5%;
   }
@@ -78,7 +70,7 @@
   color: #999A9F;
   font-weight: bold;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 968px) {
   .head .useService {
     display: none;
   }
@@ -90,7 +82,7 @@
 }
 .head #userIcon {
   width: 25px;
-  height: 27px;
+  height: 25px;
   vertical-align: middle;
   margin-top: 3px;
 }
