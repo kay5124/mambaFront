@@ -2,7 +2,7 @@ function directUrl(route) {
     if (route == "login" || route == "terms" || route == "register") route = "Member/" + route;
 
     if (route != "/") {
-        window.location.href = route;
+        window.location.href = route + ".html";
     } else {
         window.location.href = "/";
     }
