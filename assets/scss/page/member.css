@@ -1,0 +1,224 @@
+.banner {
+  height: 300px;
+  background-color: #F2F2F2;
+}
+
+.loginArea {
+  text-align: center;
+  background-color: white;
+}
+.loginArea h2 {
+  padding: 50px 0;
+}
+.loginArea .accountArea {
+  position: relative;
+  margin-bottom: 40px;
+}
+.loginArea .accountArea input {
+  width: 300px;
+  height: 44px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.loginArea .accountArea .placeholder {
+  font-size: 14px;
+  position: absolute;
+  top: -10px;
+  margin-left: 8px;
+  background-color: white;
+}
+.loginArea .accountArea .prompt {
+  width: 300px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  color: #E64E4D;
+  font-size: 14px;
+}
+.loginArea .accountArea .prompt img {
+  width: 19px;
+  height: 19px;
+  margin: 0;
+}
+.loginArea .forgetPwd {
+  cursor: pointer;
+  color: #65666D;
+  text-decoration: underline;
+}
+.loginArea .loginBtn {
+  cursor: pointer;
+  width: 300px;
+  height: 38px;
+  color: white;
+  background-color: #A1A1A1;
+  border-radius: 50px;
+  box-shadow: none;
+  border: 0;
+  margin: 20px 0;
+}
+.loginArea .loginBtn:hover {
+  background-color: #BCBCBC;
+}
+.loginArea .line {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  height: 0.5px;
+  width: 302px;
+  background-color: black;
+  position: relative;
+}
+.loginArea .line .placeholder {
+  font-size: 20px;
+  position: absolute;
+  top: -15px;
+  margin-left: -40px;
+  background-color: white;
+}
+.loginArea img {
+  margin: 0 20px;
+}
+.loginArea .fbLogin {
+  height: 50px;
+  width: 50px;
+}
+.loginArea .googleLogin {
+  height: 50px;
+  width: 50px;
+}
+.loginArea .registerArea {
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+.loginArea .registerArea a {
+  cursor: pointer;
+  color: #65666D;
+  text-decoration: underline;
+}
+
+.termsArea {
+  padding-top: 100px;
+  text-align: center;
+  background-color: white;
+}
+@media screen and (max-width: 500px) {
+  .termsArea {
+    padding-top: 50px;
+  }
+}
+.termsArea h1 {
+  margin: 50px 0;
+}
+.termsArea .termCircle {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 500px) {
+  .termsArea .termCircle {
+    display: none;
+  }
+}
+.termsArea .termCircle .line {
+  height: 3px;
+  width: 500px;
+  background-color: #797979;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.termsArea .termCircle .line .stepCircle {
+  border: 3px solid #797979;
+  height: 57px;
+  width: 57px;
+  line-height: 57px;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: -30px;
+  background-color: white;
+  font-size: 24px;
+  color: #666666;
+}
+.termsArea .termCircle .line .stepText {
+  position: absolute;
+  top: 40px;
+  font-size: 16px;
+  color: #666666;
+}
+.termsArea .termCircle .line .one {
+  left: 0;
+}
+.termsArea .termCircle .line .two {
+  left: 23%;
+}
+.termsArea .termCircle .line .three {
+  left: 45%;
+}
+.termsArea .termCircle .line .four {
+  left: 67%;
+}
+.termsArea .termCircle .line .five {
+  right: 0;
+}
+.termsArea .termCircle .line .nowStep {
+  background-color: #666666;
+  color: white !important;
+}
+.termsArea .termCircle .line .textOne {
+  left: -3%;
+}
+.termsArea .termCircle .line .textTwo {
+  left: 20%;
+}
+.termsArea .termCircle .line .textThree {
+  left: 42.5%;
+}
+.termsArea .termCircle .line .textFour {
+  left: 66.5%;
+}
+.termsArea .termCircle .line .textFive {
+  right: 0%;
+}
+.termsArea .termsImgArea {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  width: 70%;
+  height: 655px;
+  overflow-y: scroll;
+}
+@media screen and (max-width: 968px) {
+  .termsArea .termsImgArea {
+    width: 98%;
+  }
+}
+.termsArea .termsImgArea img {
+  width: 100%;
+  height: 7517px;
+}
+.termsArea .nextStepBtn {
+  cursor: pointer;
+  width: 300px;
+  height: 38px;
+  color: gray;
+  background-color: lightgray;
+  border-radius: 50px;
+  border: 1px solid gray;
+  box-shadow: none;
+  margin: 50px 0;
+}
+.termsArea .nextStepBtn:hover {
+  background-color: #BCBCBC;
+}
+.termsArea .haveAcArea {
+  padding-bottom: 50px;
+}
+.termsArea .haveAcArea a {
+  cursor: pointer;
+  color: #65666D;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=member.css.map */

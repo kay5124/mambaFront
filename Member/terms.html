@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- head style -->
+    <link id="headCss" rel="stylesheet" type="text/css" href="/assets/scss/header/head.css" />
+    <!-- main style -->
+    <link id="mainCss" rel="stylesheet" type="text/css" href="/assets/scss/main/main.css" />
+    <!-- foot style -->
+    <link id="footCss" rel="stylesheet" type="text/css" href="/assets/scss/footer/foot.css" />
+    <!-- member style -->
+    <link id="termsCss" rel="stylesheet" type="text/css" href="/assets/scss/page/member.css" />
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="/assets/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+
+    <!-- BootStrap -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <title>MAMBA | Login</title>
+
+    <style>
+        * {
+            font-family: Microsoft JhengHei;
+        }
+        
+        html,
+        body {
+            margin: 0;
+            height: 100%;
+        }
+        
+        .hide {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="header" style="text-align: center;"></nav>
+    <main id="mainContent" style="background-color: #E4E4E4">
+        <div class="main">
+            <div class="banner"></div>
+            <div class="termsArea">
+                <div class="termCircle">
+                    <div class="line">
+                        <div class="stepCircle one nowStep">1</div>
+                        <span class="stepText textOne">同意會員條款</span>
+                        <div class="stepCircle two">2</div>
+                        <span class="stepText textTwo">填寫會員資料</span>
+                        <div class="stepCircle three">3</div>
+                        <span class="stepText textThree">驗證手機號碼</span>
+                        <div class="stepCircle four">4</div>
+                        <span class="stepText textFour">驗證Email</span>
+                        <div class="stepCircle five">5</div>
+                        <span class="stepText textFive">註冊成功</span>
+                    </div>
+                </div>
+                <h1>同意會員條款</h1>
+                <div class="termsImgArea">
+                    <img src="https://d1icd6shlvmxi6.cloudfront.net/gsc/ZN17CE/cc/d7/9d/ccd79deba51244e193ac0fa443adeed8/images/會員條款/u3528.png?token=5b253b2b16008de6c0121d6752ec640d88f37530e24fc95020280e84744af135" />
+                </div>
+                <div>
+                    <input type="checkbox" name="rememberAC" id="rememberAC" />
+                    <label for="rememberAC">我同意曼巴會員條款</label>
+                </div>
+                <div>
+                    <button type="button" class="nextStepBtn">下一步</button>
+                </div>
+                <div class="haveAcArea">
+                    <a href="#">已有曼巴帳號</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer"></footer>
+
+    <script type="text/javascript ">
+        $(document).ready(function() {
+            InitHead_OnlyLogo();
+            InitFoot();
+
+        });
+    </script>
+</body>
+
+</html>

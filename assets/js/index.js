@@ -1,5 +1,5 @@
 function directUrl(route) {
-    if (route == "login" || route == "register") route = "Member/" + route;
+    if (route == "login" || route == "terms" || route == "register") route = "Member/" + route;
 
     if (route != "/") {
         window.location.href = route;
@@ -38,4 +38,13 @@ function InitBanner() {
 
 function InitMainPage() {
     $(".main").load("/templete/Page/storeGameList/storeGameList.html");
+}
+
+function canvasDrawCircle(x, y, wid, obj) {
+    var ctx = obj.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(x, y, wid, 0, 2 * Math.PI, false);
+    ctx.fillStyle = "green";
+    ctx.fill();
+    ctx.closePath();
 }
