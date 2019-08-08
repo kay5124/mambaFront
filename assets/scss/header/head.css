@@ -13,19 +13,41 @@
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  /* 手機直 */
+  /* 手機橫 */
+  /* 平板 */
+  /* 平板橫 */
+  /* 桌機 968px */
+  /* 桌機 小於1200 */
+  /* 桌機 大於 1200 */
+  /* 桌機 大於 1240 */
+}
+@media (max-width: 767px) {
+  .head {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .head {
+    width: 768px;
+  }
+}
+@media (min-width: 980px) {
+  .head {
+    width: 980px;
+  }
 }
 @media (max-width: 968px) {
   .head {
     text-align: center;
-    width: 768px;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .head {
-    width: 992px;
   }
 }
 @media (min-width: 1200px) {
+  .head {
+    width: 1200px;
+  }
+}
+@media (min-width: 1240px) {
   .head {
     width: 1200px;
   }

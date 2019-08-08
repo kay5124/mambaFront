@@ -16,25 +16,32 @@
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    // Extra small devices (portrait phones, less than 576px)
-    // @media (max-width: 575.98px) {
-    //     text-align: center;
-    // }
-    // // Small devices (landscape phones, 576px and up)
-    // @media (min-width: 576px) and (max-width: 767.98px) {
-    //     width: 576px;
-    // }
-    // Medium devices (tablets, 768px and up)
-    @media (max-width: 968px) {
-        text-align: center;
+    /* 手機直 */
+    @media (max-width: 480px) {}
+    /* 手機橫 */
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+    /* 平板 */
+    @media (min-width: 768px) and (max-width: 979px) {
         width: 768px;
     }
-    // Large devices (desktops, 992px and up)
-    @media (min-width: 992px) and (max-width: 1199.98px) {
-        width: 992px;
+    /* 平板橫 */
+    @media (min-width: 980px) {
+        width: 980px;
     }
-    // Extra large devices (large desktops, 1200px and up)
+    /* 桌機 968px */
+    @media (max-width: 968px) {
+        text-align: center;
+    }
+    /* 桌機 小於1200 */
+    @media (max-width: 1139px) {}
+    /* 桌機 大於 1200 */
     @media (min-width: 1200px) {
+        width: 1200px;
+    }
+    /* 桌機 大於 1240 */
+    @media (min-width: 1240px) {
         width: 1200px;
     }
     div {

@@ -4,8 +4,95 @@
 }
 
 .loginArea {
+    text-align: center;
     background-color: white;
     h2 {
         padding: 50px 0;
+    }
+    .accountArea {
+        position: relative;
+        margin-bottom: 40px;
+        input {
+            width: 300px;
+            height: 44px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .placeholder {
+            font-size: 14px;
+            position: absolute;
+            top: -10px;
+            margin-left: 8px;
+            background-color: rgba(255, 255, 255, 1);
+        }
+        .prompt {
+            width: 300px;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            color: #E64E4D;
+            font-size: 14px;
+            img {
+                width: 19px;
+                height: 19px;
+                margin: 0;
+            }
+        }
+    }
+    .forgetPwd {
+        cursor: pointer;
+        color: #65666D;
+        text-decoration: underline;
+    }
+    .loginBtn {
+        cursor: pointer;
+        width: 300px;
+        height: 38px;
+        color: white;
+        background-color: #A1A1A1;
+        border-radius: 50px;
+        box-shadow: none;
+        border: 0;
+        margin: 20px 0;
+        &:hover {
+            background-color: #BCBCBC;
+        }
+    }
+    .line {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        height: 0.5px;
+        width: 302px;
+        background-color: black;
+        position: relative;
+        .placeholder {
+            font-size: 20px;
+            position: absolute;
+            top: -15px;
+            margin-left: -40px;
+            background-color: rgba(255, 255, 255, 1);
+        }
+    }
+    img {
+        margin: 0 20px;
+    }
+    .fbLogin {
+        height: 50px;
+        width: 50px;
+    }
+    .googleLogin {
+        height: 50px;
+        width: 50px;
+    }
+    .registerArea {
+        margin-top: 50px;
+        padding-bottom: 50px;
+        a {
+            cursor: pointer;
+            color: #65666D;
+            text-decoration: underline;
+        }
     }
 }
