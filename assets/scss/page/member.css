@@ -3,31 +3,25 @@
   background-color: #F2F2F2;
 }
 
-.loginArea {
-  text-align: center;
-  background-color: white;
-}
-.loginArea h2 {
-  padding: 50px 0;
-}
-.loginArea .accountArea {
+.accountArea {
   position: relative;
   margin-bottom: 40px;
 }
-.loginArea .accountArea input {
+.accountArea input {
   width: 300px;
   height: 44px;
   margin-left: auto;
   margin-right: auto;
 }
-.loginArea .accountArea .placeholder {
+.accountArea .placeholder {
   font-size: 14px;
   position: absolute;
   top: -10px;
   margin-left: 8px;
+  color: #65666D;
   background-color: white;
 }
-.loginArea .accountArea .prompt {
+.accountArea .prompt {
   width: 300px;
   text-align: left;
   margin-left: auto;
@@ -35,10 +29,36 @@
   color: #E64E4D;
   font-size: 14px;
 }
-.loginArea .accountArea .prompt img {
+.accountArea .prompt img {
   width: 19px;
   height: 19px;
   margin: 0;
+  vertical-align: middle;
+}
+.accountArea .VeriftyBtn {
+  position: absolute;
+  top: 5px;
+  right: 26%;
+  cursor: pointer;
+  width: 118px;
+  height: 38px;
+  color: white;
+  background-color: #A1A1A1;
+  border-radius: 50px;
+  border: 1px solid #BCBCBC;
+  box-shadow: none;
+  font-size: 16px;
+}
+.accountArea .VeriftyBtn:hover {
+  background-color: #BCBCBC;
+}
+
+.loginArea {
+  text-align: center;
+  background-color: white;
+}
+.loginArea h2 {
+  padding: 50px 0;
 }
 .loginArea .forgetPwd {
   cursor: pointer;
@@ -97,30 +117,7 @@
   text-decoration: underline;
 }
 
-.termsArea {
-  padding-top: 100px;
-  text-align: center;
-  background-color: white;
-}
-@media screen and (max-width: 500px) {
-  .termsArea {
-    padding-top: 50px;
-  }
-}
-.termsArea h1 {
-  margin: 50px 0;
-}
-.termsArea .termCircle {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 100px;
-}
-@media screen and (max-width: 500px) {
-  .termsArea .termCircle {
-    display: none;
-  }
-}
-.termsArea .termCircle .line {
+.line {
   height: 3px;
   width: 500px;
   background-color: #797979;
@@ -128,7 +125,7 @@
   margin-right: auto;
   position: relative;
 }
-.termsArea .termCircle .line .stepCircle {
+.line .stepCircle {
   border: 3px solid #797979;
   height: 57px;
   width: 57px;
@@ -141,47 +138,71 @@
   font-size: 24px;
   color: #666666;
 }
-.termsArea .termCircle .line .stepText {
+.line .stepText {
   position: absolute;
   top: 40px;
   font-size: 16px;
   color: #666666;
 }
-.termsArea .termCircle .line .one {
+.line .one {
   left: 0;
 }
-.termsArea .termCircle .line .two {
+.line .two {
   left: 23%;
 }
-.termsArea .termCircle .line .three {
+.line .three {
   left: 45%;
 }
-.termsArea .termCircle .line .four {
+.line .four {
   left: 67%;
 }
-.termsArea .termCircle .line .five {
+.line .five {
   right: 0;
 }
-.termsArea .termCircle .line .nowStep {
+.line .nowStep {
   background-color: #666666;
   color: white !important;
 }
-.termsArea .termCircle .line .textOne {
+.line .textOne {
   left: -3%;
 }
-.termsArea .termCircle .line .textTwo {
+.line .textTwo {
   left: 20%;
 }
-.termsArea .termCircle .line .textThree {
+.line .textThree {
   left: 42.5%;
 }
-.termsArea .termCircle .line .textFour {
+.line .textFour {
   left: 66.5%;
 }
-.termsArea .termCircle .line .textFive {
+.line .textFive {
   right: 0%;
 }
-.termsArea .termsImgArea {
+
+.MemberArea {
+  padding: 100px 0;
+  text-align: center;
+  background-color: white;
+}
+@media screen and (max-width: 500px) {
+  .MemberArea {
+    padding-top: 50px;
+  }
+}
+.MemberArea h1 {
+  margin: 50px 0;
+}
+.MemberArea .termCircle {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 500px) {
+  .MemberArea .termCircle {
+    display: none;
+  }
+}
+.MemberArea .termsImgArea {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
@@ -190,35 +211,110 @@
   overflow-y: scroll;
 }
 @media screen and (max-width: 968px) {
-  .termsArea .termsImgArea {
+  .MemberArea .termsImgArea {
     width: 98%;
   }
 }
-.termsArea .termsImgArea img {
+.MemberArea .termsImgArea img {
   width: 100%;
   height: 7517px;
 }
-.termsArea .nextStepBtn {
+.MemberArea .nextStepBtn {
   cursor: pointer;
   width: 300px;
   height: 38px;
   color: gray;
   background-color: lightgray;
   border-radius: 50px;
-  border: 1px solid gray;
-  box-shadow: none;
+  border: 1px solid #BCBCBC;
   margin: 50px 0;
 }
-.termsArea .nextStepBtn:hover {
+.MemberArea .nextStepBtn:hover {
   background-color: #BCBCBC;
 }
-.termsArea .haveAcArea {
+.MemberArea .enable {
+  background-color: #A1A1A1;
+  color: white;
+}
+.MemberArea .haveAcArea {
   padding-bottom: 50px;
 }
-.termsArea .haveAcArea a {
+.MemberArea .haveAcArea a {
   cursor: pointer;
   color: #65666D;
   text-decoration: underline;
+}
+
+.userData div {
+  margin-bottom: 15px;
+}
+.userData .prompt {
+  width: 308px;
+}
+
+.veriftyPointArea {
+  width: 40%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.successArea {
+  padding: 50px 0;
+  text-align: center;
+  background-color: white;
+  font-size: 16px;
+  color: #65666D !important;
+}
+.successArea .iconCircle {
+  border: 1px solid #BCBCBC;
+  margin: 50px auto;
+  width: 126px;
+  height: 126px;
+  border-radius: 50%;
+  line-height: 126px;
+}
+.successArea .iconCircle img {
+  width: 126px;
+  height: 126px;
+  border-radius: 50%;
+}
+.successArea .text {
+  line-height: 25px;
+}
+.successArea .text a {
+  color: #65666D !important;
+}
+.successArea .back {
+  cursor: pointer;
+  margin: 50px 0;
+  width: 300px;
+  height: 38px;
+  border: 1px solid #868686;
+  border-radius: 50px;
+  background-color: white;
+  color: #5E5E5E;
+  font-size: 16px;
+}
+.successArea .back:hover {
+  background-color: #C9C9C9;
+  color: white;
+}
+
+.sendBtn {
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  width: 300px;
+  height: 38px;
+  border: 1px solid #BCBCBC;
+  border-radius: 50px;
+  background-color: #A1A1A1;
+  color: white;
+  font-size: 16px;
+}
+.sendBtn:hover {
+  background-color: #C9C9C9;
+  border: 1px solid #C9C9C9;
 }
 
 /*# sourceMappingURL=member.css.map */

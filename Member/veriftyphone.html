@@ -53,16 +53,18 @@
     <main id="mainContent" style="background-color: #E4E4E4">
         <div class="main">
             <div class="banner"></div>
-            <div class="MemberArea" style="padding-bottom: 30px;">
+            <div class="MemberArea" style="padding-bottom: 20px;">
                 <div class="termCircle">
                     <div class="line">
                         <div class="stepCircle one">
                             <img src="/assets/images/checked.png" width="26px" height="20px" />
                         </div>
                         <span class="stepText textOne">同意會員條款</span>
-                        <div class="stepCircle two nowStep">2</div>
+                        <div class="stepCircle two">
+                            <img src="/assets/images/checked.png" width="26px" height="20px" />
+                        </div>
                         <span class="stepText textTwo">填寫會員資料</span>
-                        <div class="stepCircle three">3</div>
+                        <div class="stepCircle three nowStep">3</div>
                         <span class="stepText textThree">驗證手機號碼</span>
                         <div class="stepCircle four">4</div>
                         <span class="stepText textFour">驗證Email</span>
@@ -70,48 +72,41 @@
                         <span class="stepText textFive">註冊成功</span>
                     </div>
                 </div>
-                <h1>填寫會員資料</h1>
-                <div class="userData">
+                <h1>驗證手機號碼</h1>
+                <div class="userData" style="height: 250px;">
                     <div class="accountArea">
-                        <span class="placeholder hide">使用者暱稱</span>
-                        <input data-type="使用者暱稱" name="nickName" type="text" placeholder="使用者暱稱" />
+                        <span class="placeholder hide">手機號碼</span>
+                        <input data-type="請輸入手機號碼" name="phone" type="number" placeholder="請輸入手機號碼" />
+                        <button id="sendVeriftyBtn" type="button" class="VeriftyBtn">
+                            發送驗證碼
+                        </button>
                         <br />
                         <div class="prompt">
                             <img src="/assets/images/warning.png" />
                             <span id="promptText">此欄位不可空白</span>
                         </div>
                     </div>
-                    <div class="accountArea">
-                        <span class="placeholder hide">帳號</span>
-                        <input data-type="帳號" name="account" type="text" placeholder="帳號" />
+                    <div class="accountArea hide">
+                        <span class="placeholder hide">驗證碼</span>
+                        <input data-type="請輸入驗證碼" name="veriftyCode" type="number" placeholder="請輸入驗證碼" />
                         <br />
                         <div class="prompt">
                             <img src="/assets/images/warning.png" />
-                            <span id="promptText">帳號欄位不可空白</span>
+                            <span id="promptText">驗證碼輸入錯誤</span>
                         </div>
                     </div>
-                    <div class="accountArea">
-                        <span class="placeholder hide">密碼</span>
-                        <input data-type="密碼長度須介於8-16個英數字元之間" name="pwd" type="password"
-                            placeholder="密碼長度須介於8-16個英數字元之間" />
-                        <br />
-                        <div class="prompt">
-                            <img src="/assets/images/warning.png" />
-                            <span id="promptText">密碼欄位不可空白</span>
-                        </div>
-                    </div>
-                    <div class="accountArea">
-                        <span class="placeholder hide">再次輸入密碼</span>
-                        <input data-type="請再次輸入密碼" name="rePwd" type="password" placeholder="請再次輸入密碼" />
-                        <br />
-                        <div class="prompt">
-                            <img src="/assets/images/warning.png" />
-                            <span id="promptText">此欄位不可空白</span>
-                        </div>
-                    </div>
+
+                    <button id="nextBtn" type="button" class="nextStepBtn enable hide"
+                        style="margin: 25px 0;">確認</button>
                 </div>
-                <div>
-                    <button id="nextBtn" type="button" class="nextStepBtn enable" >下一步</button>
+                <div class="veriftyPointArea">
+                    <p style="font-size: 20px;">尚未取得驗證碼?</p>
+                    <p>請稍候再試，或確認以下事項</p>
+                    <p style="color:#65666D;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                        bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin
+                        sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur
+                        ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed
+                        rhoncus pronin sapien nunc accuan eget.</p>
                 </div>
             </div>
         </div>
@@ -119,13 +114,32 @@
     <footer id="footer"></footer>
 
     <script type="text/javascript ">
-        var isAgree = false;
+        var number = 60;
+        var timer;
         $(document).ready(function() {
             InitHead_OnlyLogo();
             InitFoot();
 
+            $("#sendVeriftyBtn").click(function(s){
+                $("#sendVeriftyBtn").text(number + "s");
+                
+                var div = $(".accountArea");
+                div.removeClass("hide");
+                $("#nextBtn").removeClass("hide");
+
+                timer = setInterval(() => {
+                    number -= 1;
+                    $("#sendVeriftyBtn").text(number + "s");
+                    if(number == 0){
+                        clearInterval(timer);
+                        number = 60;
+                        $("#sendVeriftyBtn").text("重新發送驗證碼");
+                    }
+                }, 1000);
+            });
+
             $("#nextBtn").click(function(){
-                directUrl('veriftyphone');
+                directUrl('veriftyemail');
             });
 
             $(".accountArea input").focus(function(s) {

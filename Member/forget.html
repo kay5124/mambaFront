@@ -53,34 +53,22 @@
     <main id="mainContent" style="background-color: #E4E4E4">
         <div class="main">
             <div class="banner"></div>
-            <div class="MemberArea">
-                <div class="termCircle">
-                    <div class="line">
-                        <div class="stepCircle one nowStep">1</div>
-                        <span class="stepText textOne">同意會員條款</span>
-                        <div class="stepCircle two">2</div>
-                        <span class="stepText textTwo">填寫會員資料</span>
-                        <div class="stepCircle three">3</div>
-                        <span class="stepText textThree">驗證手機號碼</span>
-                        <div class="stepCircle four">4</div>
-                        <span class="stepText textFour">驗證Email</span>
-                        <div class="stepCircle five">5</div>
-                        <span class="stepText textFive">註冊成功</span>
+            <div class="successArea">
+                <h1>忘記密碼</h1>
+                <div class="text">
+                    請輸入您的帳號或登錄的電子郵件信箱，<br />
+                    我們將寄送重設密碼的郵件。
+                </div>
+                <br />
+                <div class="accountArea">
+                    <span class="placeholder hide">帳號/Email</span>
+                    <input data-type="請輸入帳號或Email" name="account" type="text" placeholder="請輸入帳號或Email" />
+                    <br />
+                    <div class="prompt">
+                        <img src="/assets/images/warning.png" />
+                        <span id="promptText">此欄位不可空白</span>
                     </div>
-                </div>
-                <h1>同意會員條款</h1>
-                <div class="termsImgArea">
-                    <img src="/assets/images/termsList.png" />
-                </div>
-                <div>
-                    <input type="checkbox" name="agree" id="agree" />
-                    <label for="agree">我同意曼巴會員條款</label>
-                </div>
-                <div>
-                    <button id="nextBtn" type="button" class="nextStepBtn">下一步</button>
-                </div>
-                <div class="haveAcArea">
-                    <a href="#">已有曼巴帳號</a>
+                    <button type="button" class="sendBtn">送出</button>
                 </div>
             </div>
         </div>
@@ -92,20 +80,17 @@
         $(document).ready(function() {
             InitHead_OnlyLogo();
             InitFoot();
-            $("#agree").on('click',function(s){
-                isAgree = s.currentTarget.checked;
-                if(s.currentTarget.checked){
-                    $("#nextBtn").addClass("enable");
-                }else{
-                    $("#nextBtn").removeClass("enable");
-                }
+           
+            $(".accountArea input").focus(function(s) {
+                var classList = s.target.parentNode.firstElementChild.classList;
+                classList.remove("hide");
+                s.target.placeholder = "";
             });
-            $("#nextBtn").click(function(){
-                if(isAgree){
-                    directUrl('register');
-                }else{
-                    alert("請先同意條款。");
-                }
+
+            $(".accountArea input").focusout(function(s) {
+                var classList = s.target.parentNode.firstElementChild.classList;
+                classList.add("hide");
+                s.target.placeholder = s.target.attributes[0].value;
             });
         });
     </script>

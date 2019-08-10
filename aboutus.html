@@ -27,7 +27,7 @@
 
 
     <!-- banner style 為了蓋過bootstrap輪播CSS -->
-    <link id="bannerCss" rel="stylesheet" type="text/css" href="./assets/scss/main/banner.css" />
+    <link id="bannerCss" rel="stylesheet" type="text/css" href="/assets/scss/main/banner.css" />
 
     <title>MAMBA</title>
 
@@ -49,18 +49,13 @@
 </head>
 
 <body>
-    <nav id="header"></nav>
-    <div id="banner"></div>
     <main id="mainContent">
-        <div class="main"></div>
+        <div class="main" style="height: 800px;"></div>
     </main>
     <footer id="footer"></footer>
 
     <script type="text/javascript">
         $(document).ready(function() {
-            InitHead();
-            InitBanner();
-            InitMainPage();
             InitFoot();
         });
     </script>

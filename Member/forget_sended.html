@@ -53,34 +53,26 @@
     <main id="mainContent" style="background-color: #E4E4E4">
         <div class="main">
             <div class="banner"></div>
-            <div class="MemberArea">
-                <div class="termCircle">
-                    <div class="line">
-                        <div class="stepCircle one nowStep">1</div>
-                        <span class="stepText textOne">同意會員條款</span>
-                        <div class="stepCircle two">2</div>
-                        <span class="stepText textTwo">填寫會員資料</span>
-                        <div class="stepCircle three">3</div>
-                        <span class="stepText textThree">驗證手機號碼</span>
-                        <div class="stepCircle four">4</div>
-                        <span class="stepText textFour">驗證Email</span>
-                        <div class="stepCircle five">5</div>
-                        <span class="stepText textFive">註冊成功</span>
-                    </div>
+            <div class="successArea">
+                <h1>重設密碼郵件已傳送</h1>
+                <div class="text">
+                    請至 abc12345@gmail.com
+                    <br />
+                    收取重設密碼郵件
                 </div>
-                <h1>同意會員條款</h1>
-                <div class="termsImgArea">
-                    <img src="/assets/images/termsList.png" />
+                <br />
+                <div class="iconCircle">
+                    icon
                 </div>
-                <div>
-                    <input type="checkbox" name="agree" id="agree" />
-                    <label for="agree">我同意曼巴會員條款</label>
-                </div>
-                <div>
-                    <button id="nextBtn" type="button" class="nextStepBtn">下一步</button>
-                </div>
-                <div class="haveAcArea">
-                    <a href="#">已有曼巴帳號</a>
+                <div class="veriftyPointArea">
+                    <p style="font-size: 20px;">尚未取得驗證碼?</p>
+                    <p>請稍候再試，或確認以下事項</p>
+                    <p style="color:#65666D;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                        bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin
+                        sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur
+                        ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed
+                        rhoncus pronin sapien nunc accuan eget.
+                    </p>
                 </div>
             </div>
         </div>
@@ -92,21 +84,7 @@
         $(document).ready(function() {
             InitHead_OnlyLogo();
             InitFoot();
-            $("#agree").on('click',function(s){
-                isAgree = s.currentTarget.checked;
-                if(s.currentTarget.checked){
-                    $("#nextBtn").addClass("enable");
-                }else{
-                    $("#nextBtn").removeClass("enable");
-                }
-            });
-            $("#nextBtn").click(function(){
-                if(isAgree){
-                    directUrl('register');
-                }else{
-                    alert("請先同意條款。");
-                }
-            });
+           
         });
     </script>
 </body>
