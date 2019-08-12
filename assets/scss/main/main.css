@@ -1,41 +1,29 @@
-@charset "UTF-8";
+#mainContent {
+  background-image: url("/assets/images/bg_leaves.png");
+  background-size: contain;
+  position: relative;
+}
+
+.contentTop {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  top: -25%;
+  z-index: -999;
+}
+
+.contentBottom {
+  max-width: 100%;
+  position: absolute;
+  bottom: -25%;
+  z-index: -999;
+}
+
 .main {
-  width: 1200px;
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  /* 手機直 */
-  /* 手機橫 */
-  /* 平板 */
-  /* 平板橫 */
-  /* 桌機 小於1200 */
-  /* 桌機 大於 1200 */
-  /* 桌機 大於 1240 */
-}
-@media (max-width: 767px) {
-  .main {
-    width: 100%;
-  }
-}
-@media (min-width: 768px) and (max-width: 979px) {
-  .main {
-    width: 768px;
-  }
-}
-@media (min-width: 980px) {
-  .main {
-    width: 980px;
-  }
-}
-@media (min-width: 1200px) {
-  .main {
-    width: 1200px;
-  }
-}
-@media (min-width: 1240px) {
-  .main {
-    width: 1200px;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */

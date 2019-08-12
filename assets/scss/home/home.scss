@@ -1,95 +1,104 @@
 .main {
-    .storeGame {
-        width: 100%;
-        height: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        .title {
-            padding-top: 50px;
-            padding-bottom: 50px;
-        }
-        .gameList {
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-            article {
-                display: inline-block;
-                margin-left: 10px;
-                margin-right: 10px;
-            }
-        }
-        .gameDiv {
-            width: 287px;
-            height: 397px;
-            // border: 1px solid black;
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 10px;
-            box-shadow: rgb(188, 188, 188) 0px 0px 10px;
-            margin-bottom: 50px;
-            padding: 15px;
-            .gameImg {
-                position: relative;
-                top: calc((100% - 70px) / 2);
-            }
-            .gameImgArea {
-                margin: 0 auto;
-                position: relative;
-                border-radius: 10px;
-                background-color: #F2F2F2;
-                height: 260px;
-                // line-height: 260px;
-                .onFix {
-                    position: absolute;
-                    bottom: 0;
-                    width: 100%;
-                }
-            }
-            .gameName {
-                padding-top: 10px;
-                height: 70px;
-            }
-            .serviceBtn {
-                .btn {
-                    display: inline-block;
-                    width: 48%;
-                    height: 38px;
-                    border-radius: 50px;
-                    border: 1px black solid;
-                }
-                .web {
-                    background-color: #fff;
-                    color: #333333;
-                    &:hover {
-                        color: white;
-                        background-color: #C9C9C9;
-                    }
-                }
-                .store {
-                    color: white;
-                    background-color: #A1A1A1;
-                    border: none;
-                    &:hover {
-                        background-color: #BCBCBC;
-                    }
-                    &:active {
-                        background-color: #515151;
-                    }
-                }
-            }
-        }
-        .moreGame {
-            margin-bottom: 50px;
-            .btn {
-                width: 118px;
-                height: 38px;
-                border-radius: 50px;
-                border: 1px black solid;
-                &:hover {
-                    color: white;
-                    background-color: #C9C9C9;
-                }
-            }
-        }
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  .storeGame {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    .topTitle {
+      font-size: 20px;
+      color: rgb(246, 147, 53);
     }
+    .title {
+      padding-bottom: 50px;
+    }
+    .gameList {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      article {
+        display: inline-block;
+      }
+    }
+    .gameDiv {
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      width: 350px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 3px 4px -4px rgb(188, 188, 188);
+      margin-bottom: 5px;
+      padding: 6px;
+      img {
+        width: 100%;
+        height: 90%;
+      }
+      .imgFixing {
+        width: 216px;
+        height: 216px;
+        position: absolute;
+        top: 12%;
+        left: 19%;
+        z-index: 999;
+      }
+      .gameName {
+        line-height: 70px; // padding: 10px 0;
+        height: 70px;
+        font-size: 24px;
+      }
+      .serviceBtn {
+        padding: 20px 0;
+        .btn {
+          display: inline-block;
+          width: 40%;
+          height: 38px;
+          border-radius: 50px;
+          border: 1px black solid;
+          margin: 0 10px;
+        }
+        .web {
+          color: white;
+          border: 1px #BAC1B8 solid;
+          background-color: #BAC1B8;
+          box-shadow: 0px 0px 15px 0px #BAC1B8;
+          &:hover {
+            background-color: lightgray;
+            box-shadow: 0px 0px 15px 0px lightgray;
+            border: 1px lightgray solid;
+          }
+        }
+        .store {
+          color: white;
+          border: 1px #f69335 solid;
+          background-color: #f69335;
+          box-shadow: 0px 0px 15px 0px #f69335;
+          &:hover {
+            background-color: #ffa24a;
+            box-shadow: 0px 0px 15px 0px #ffa24a;
+            border: 1px #ffa24a solid;
+          }
+        }
+      }
+    }
+    .moreGame {
+      margin: 50px auto;
+      .btn {
+        width: 118px;
+        height: 38px;
+        color: white;
+        border-radius: 50px;
+        border: 1px #f69335 solid;
+        background-color: #f69335;
+        box-shadow: 0px 0px 15px 0px #f69335;
+        &:hover {
+          background-color: #ffa24a;
+          box-shadow: 0px 0px 15px 0px #ffa24a;
+          border: 1px #ffa24a solid;
+        }
+      }
+    }
+  }
 }
