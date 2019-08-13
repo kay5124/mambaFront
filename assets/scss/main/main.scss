@@ -6,15 +6,14 @@
 
 .contentTop{
     max-width: 100%;
-    height: auto;
-    position: absolute;
+    position: fixed;
     top: -25%;
     z-index: -999;
 }
 
 .contentBottom{
     max-width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: -25%;
     z-index: -999;
 }
@@ -23,7 +22,7 @@
     max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
+    // text-align: center;
     // // background-color: #D7D7D7;
     // /* 手機直 */
     // @media (max-width: 480px) {}

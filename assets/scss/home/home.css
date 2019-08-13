@@ -1,13 +1,11 @@
 .main {
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
+  position: relative;
 }
 .main .storeGame {
-  width: 100%;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  height: auto;
+}
+.main .storeGame .topTitleDiv {
+  text-align: center;
 }
 .main .storeGame .topTitle {
   font-size: 20px;
@@ -17,27 +15,36 @@
   padding-bottom: 50px;
 }
 .main .storeGame .gameList {
-  width: 100%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
+  vertical-align: middle;
 }
 .main .storeGame .gameList article {
   display: inline-block;
 }
 .main .storeGame .gameDiv {
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  width: 350px;
+  margin-left: 10px;
+  margin-bottom: 15px;
   text-align: center;
   border-radius: 10px;
   box-shadow: 0 3px 4px -4px #bcbcbc;
-  margin-bottom: 5px;
-  padding: 6px;
+  width: 360px;
+}
+@media (max-width: 1024px) {
+  .main .storeGame .gameDiv {
+    width: 48%;
+  }
+}
+@media (max-width: 678px) {
+  .main .storeGame .gameDiv {
+    width: 95%;
+  }
 }
 .main .storeGame .gameDiv img {
-  width: 100%;
-  height: 90%;
+  max-width: 100%;
+  height: auto;
 }
 .main .storeGame .gameDiv .imgFixing {
   width: 216px;
@@ -48,9 +55,8 @@
   z-index: 999;
 }
 .main .storeGame .gameDiv .gameName {
-  line-height: 70px;
+  margin-top: 30px;
   height: 70px;
-  font-size: 24px;
 }
 .main .storeGame .gameDiv .serviceBtn {
   padding: 20px 0;
@@ -65,9 +71,9 @@
 }
 .main .storeGame .gameDiv .serviceBtn .web {
   color: white;
-  border: 1px #BAC1B8 solid;
-  background-color: #BAC1B8;
-  box-shadow: 0px 0px 15px 0px #BAC1B8;
+  border: 1px #bac1b8 solid;
+  background-color: #bac1b8;
+  box-shadow: 0px 0px 15px 0px #bac1b8;
 }
 .main .storeGame .gameDiv .serviceBtn .web:hover {
   background-color: lightgray;
@@ -86,6 +92,7 @@
   border: 1px #ffa24a solid;
 }
 .main .storeGame .moreGame {
+  text-align: center;
   margin: 50px auto;
 }
 .main .storeGame .moreGame .btn {

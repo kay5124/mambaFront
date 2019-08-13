@@ -2,10 +2,6 @@
   @return ($px / basic-font-size) * 1rem;
 }
 
-.customWidth {
-  max-width: 1280px;
-}
-
 .headbg {
   background-color: #fff;
   font-size: 16px;
@@ -14,7 +10,9 @@
   margin: 0 auto;
   position: relative;
 }
-
+.row {
+  margin: 0;
+}
 .head {
   width: 100%;
   height: 70px;
@@ -43,6 +41,7 @@
       margin-right: auto;
     }
     #logoIcon {
+      width: 150px;
       vertical-align: middle;
       cursor: pointer;
     }
@@ -61,6 +60,9 @@
       height: 30px;
       vertical-align: middle;
     }
+  }
+  .member {
+    cursor: pointer;
   }
   .useService {
     width: 100px;

@@ -1,8 +1,4 @@
 @charset "UTF-8";
-.customWidth {
-  max-width: 1280px;
-}
-
 .headbg {
   background-color: #fff;
   font-size: 16px;
@@ -10,6 +6,10 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 10px;
   margin: 0 auto;
   position: relative;
+}
+
+.row {
+  margin: 0;
 }
 
 .head {
@@ -46,6 +46,7 @@
   }
 }
 .head .logoDiv #logoIcon {
+  width: 150px;
   vertical-align: middle;
   cursor: pointer;
 }
@@ -63,6 +64,9 @@
   width: 30px;
   height: 30px;
   vertical-align: middle;
+}
+.head .member {
+  cursor: pointer;
 }
 .head .useService {
   width: 100px;

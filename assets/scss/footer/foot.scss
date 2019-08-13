@@ -1,12 +1,18 @@
 footer {
+  vertical-align: middle;
   text-align: center;
   background-image: url("/assets/images/footer_bg.png");
   background-size: 100% 100%;
-  background-repeat: no-repeat; 
-  height: 55%;
+  background-repeat: no-repeat;
+  height: 400px;
+  .footer {
+    width: 100%;
+    display: inline-block;
+    padding-top: 150px;
+  }
   .footerLogo {
-    margin-top: 10%;
-    width: 12%;
+    // margin-top: 10%;
+    width: 150px;
   }
   .service {
     font-size: 16px;

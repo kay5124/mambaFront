@@ -1,12 +1,10 @@
 .main {
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
+  position: relative;
   .storeGame {
-    width: 100%;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    height: auto;
+    .topTitleDiv {
+      text-align: center;
+    }
     .topTitle {
       font-size: 20px;
       color: rgb(246, 147, 53);
@@ -15,26 +13,31 @@
       padding-bottom: 50px;
     }
     .gameList {
-      width: 100%;
+      width: 90%;
       margin-left: auto;
       margin-right: auto;
+      vertical-align: middle;
       article {
         display: inline-block;
       }
     }
     .gameDiv {
       position: relative;
-      margin-left: auto;
-      margin-right: auto;
-      width: 350px;
+      margin-left: 10px;
+      margin-bottom: 15px;
       text-align: center;
       border-radius: 10px;
       box-shadow: 0 3px 4px -4px rgb(188, 188, 188);
-      margin-bottom: 5px;
-      padding: 6px;
+      width: 360px;
+      @media (max-width: 1024px) {
+        width: 48%;
+      }
+      @media (max-width: 678px) {
+        width: 95%;
+      }
       img {
-        width: 100%;
-        height: 90%;
+        max-width: 100%;
+        height: auto;
       }
       .imgFixing {
         width: 216px;
@@ -45,9 +48,10 @@
         z-index: 999;
       }
       .gameName {
-        line-height: 70px; // padding: 10px 0;
+        // line-height: 70px; // padding: 10px 0;
+        margin-top: 30px;
         height: 70px;
-        font-size: 24px;
+        // font-size: 24px;
       }
       .serviceBtn {
         padding: 20px 0;
@@ -61,9 +65,9 @@
         }
         .web {
           color: white;
-          border: 1px #BAC1B8 solid;
-          background-color: #BAC1B8;
-          box-shadow: 0px 0px 15px 0px #BAC1B8;
+          border: 1px #bac1b8 solid;
+          background-color: #bac1b8;
+          box-shadow: 0px 0px 15px 0px #bac1b8;
           &:hover {
             background-color: lightgray;
             box-shadow: 0px 0px 15px 0px lightgray;
@@ -84,6 +88,7 @@
       }
     }
     .moreGame {
+      text-align: center;
       margin: 50px auto;
       .btn {
         width: 118px;
